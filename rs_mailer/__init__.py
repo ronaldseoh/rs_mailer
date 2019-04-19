@@ -40,7 +40,7 @@ class EmailSender():
         if cc_addresses is not None:
             self.cc_addresses = cc_addresses
             if type(self.cc_addresses) == list:
-                self.msg['cc'] = ", ".join(self.cc_address)
+                self.msg['cc'] = ", ".join(self.cc_addresses)
             else:
                 self.msg['cc'] = self.cc_addresses
         else:
